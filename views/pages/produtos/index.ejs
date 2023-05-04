@@ -1,0 +1,22 @@
+    <%- contentFor('body')%> 
+    <%produtos.forEach(value => {%>
+        <tr>
+            <td><%=value.nome%></td>
+            <td><%=value.descricao%></td>
+
+            <%if(value.promocao == true) {%>
+                <td><s class="precoSemDesconto"><%="R$ " + value.preco%></s></td>
+                <td class="precoComDesconto"><%="R$ " + value.precoPromocao%></td>
+            <%} else {%> 
+                <td colspan="2"><%="R$ " + value.preco%></td>
+            <%}%>
+
+            <%if(value.foto){%>
+                <td><img src="<%=value.foto%>" class="d-block w-50 rounded mx-auto" alt="..."></td>
+            <%} else {%>
+                <td><img src="<%=imgNada%>" class="d-block w-50 rounded mx-auto" alt="..."></td>
+            <%}%>
+            
+            <td><%="Postado em " + value.postadoEm%></td>
+        </tr>  
+    <%})%>

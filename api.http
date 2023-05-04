@@ -1,0 +1,83 @@
+GET http://localhost:8080/produtos
+
+###
+
+POST http://localhost:8080/produtos
+Content-Type: application/json
+
+{
+    "nome": "Ovo Capira",
+    "descricao": "10 Ovos de galinha caipira",
+    "preco": 13.80,
+    "tags": ["ovos", "proteina", "gema"]
+
+}
+
+###
+
+POST http://localhost:8080/produtos
+Content-Type: application/json
+
+{
+    "nome": "Coca Cola",
+    "descricao": "Bebida refrescante",
+    "preco": 8.00,
+    "tags": ["líquido", "bebida"]
+
+}
+
+###
+
+POST http://localhost:8080/produtos
+Content-Type: application/json
+
+{
+    "nome": "Sabão OMO",
+    "descricao": "Sabão para deixar a roupa limpinha e macia",
+    "preco": 17.00,
+    "tags": ["roupa", "lavagem"]
+}
+
+###
+
+POST http://localhost:8080/produtos
+Content-Type: application/json
+
+{
+    "nome": "Frango 1kg",
+    "descricao": "Frango completo e muito delicioso",
+    "preco": 15.00,
+    "tags": ["proteina", "carne"]
+
+}
+
+###
+
+POST http://localhost:8080/produtos
+Content-Type: application/json
+
+{
+    "nome": "Melancia 500g",
+    "descricao": "Melancia suculenta e muito deliciosa",
+    "preco": 3.00,
+    "tags": ["fruta", "líquido"]
+
+}
+
+###
+
+POST http://localhost:8080/produtos
+Content-Type: application/json
+
+{
+    "nome": "Celular Iphone Apple",
+    "descricao": "Poderoso smartphone, com 256gb de memória e 6gb de RAM",
+    "preco": 6700.90,
+    "tags": ["celular", "maçã", "smartphone"],
+    "promocao": true,
+    "precoPromocao": 5550.98
+}
+
+###
+
+DELETE http://localhost:8080/produtos/?id=4
